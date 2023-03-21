@@ -1,0 +1,35 @@
+{
+    "sourceType": "unambiguous",
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "chrome": 100
+          }
+        }
+      ],
+      "@babel/preset-typescript"
+    ],
+    "assumptions": {
+      "setPublicClassFields": true
+    },
+    "plugins": [
+      [
+        "@babel/plugin-transform-typescript",
+        {
+          "allowDeclareFields": true
+        }
+      ],
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "version": "2018-09",
+          "decoratorsBeforeExport": true
+        }
+      ],
+      [
+        "@babel/plugin-proposal-class-properties"
+      ]
+    ]
+  }
